@@ -1,2 +1,3 @@
 # app_new
-creación de una nueva aplicación
+Realiza una creación de un histograma para el conjunto de datos de anuncios de venta de coches
+
