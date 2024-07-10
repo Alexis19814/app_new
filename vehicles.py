@@ -16,3 +16,26 @@ hist_button = st.button('Construir histograma') # crear un botón
         
             # mostrar un gráfico Plotly interactivo
             st.plotly_chart(fig, use_container_width=True)
+
+disp_button = st.button('Construir grafica de dispersion') # crear un botón
+        
+        if disp_button:
+            
+            st.write('Creación de un grafico de dispersion para el conjunto de datos de anuncios de venta de coches')
+            
+            # crear un histograma
+            fig = px.scatter(car_data, x="odometer", y="price")
+        
+            # mostrar un gráfico Plotly interactivo
+            st.plotly_chart(fig, use_container_width=True)
+bar_button = st.button('Construir grafica de barras') # crear un botón
+        
+        if bar_button:
+            
+            st.write('Creación de un grafico de barras para el conjunto de datos de anuncios de venta de coches')
+            
+            # crear un histograma
+            fig = px.bar(car_data, x="condition",y="price")
+        
+            # mostrar un gráfico Plotly interactivo
+            st.plotly_chart(fig, use_container_width=True)
